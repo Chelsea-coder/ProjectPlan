@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toy Story Directory", "Toy Story Directory\Toy Story Directory.csproj", "{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A843F4D-EBCA-4E53-B4E1-B1ED220DC7E5}
+	EndGlobalSection
+EndGlobal
