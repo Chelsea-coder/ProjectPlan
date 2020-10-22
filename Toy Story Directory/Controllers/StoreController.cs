@@ -16,7 +16,7 @@ namespace Toy_Story_Directory.Controllers
             var categories = new List<Category>();
             for (var i = 1; i <= 10; i++)
             {
-                categories.Add(new Category { Id = i, Name = "Category " + i.ToString() });
+                categories.Add(new Category { CategoryId = i, Name = "Category " + i.ToString() });
             }
             // Modify the return View
             return View(categories);

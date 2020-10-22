@@ -8,8 +8,12 @@ namespace Toy_Story_Directory.Models
 {
     public class Category
     {
-        public int Id { get; set; }
+        public int CategoryId { get; set; } // Primary Key
         [Required]
         public string Name { get; set; }
+
+        public List<Product>Products { get; set; }
+        
+
     }
 }
