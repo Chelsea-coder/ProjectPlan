@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Toy_Story_Directory.Models.Category>
+<h1> Welcome To The Toy Store Directory</h1>
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>
+            <a asp-controller="Store" asp-action="Browse" asp-route-category="@c.Name">@c.Name</a>
+        </li>
+
+
+    }
+
+</ul>
+
+@*<ul>
+        <li>
+           <a asp-controller="Store" asp-action="Browse" asp-route-category="Kids">Kids</a>
+        </li>
+        <li>
+            <a asp-controller="Store" asp-action="Browse" asp-route-category="Teens">Teens</a>
+        </li>
+        <li>
+            <a asp-controller="Store" asp-action="Browse" asp-route-category="Adults">Adults</a>
+        </li>
+    </ul>*@
