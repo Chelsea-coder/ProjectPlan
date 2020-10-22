@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toy Story Directory", "Toy Story Directory\Toy Story Directory.csproj", "{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toy Store Directory", "Toy Story Directory\Toy Store Directory.csproj", "{08B0BE24-A5EF-41CE-BC1E-63E6A9223DD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
