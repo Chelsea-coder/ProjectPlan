@@ -18,13 +18,20 @@ namespace Toy_Story_Directory.Controllers
             {
                 categories.Add(new Category { Id = i, Name = "Category " + i.ToString() });
             }
-            //modify the return View
+            // Modify the return View
             return View(categories);
         }
 
         public IActionResult Browse(string category)
         {
             ViewBag.category = category;
+            return View();
+        }
+
+        // /Store/AddCategory
+        public IActionResult AddCategory()
+        {
+            // Load a form to capture an object from a user
             return View();
         }
     }
