@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Toy_Story_Directory.Models.Product>
+
+<h1>Browse Our Wide Selection</h1>
+
+@if (ViewBag.Category != null)
+{
+    <h2>@ViewBag.category </h2>
+}
+
+<section>
+    <div class="row">
+
+        @foreach (var p in Model)
+        {
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <div class="card mb-3 text-center h-100">
+                    <div class="card-body">
+                        <h5>
+                            <a asp-controller="Products" asp-action="Details" asp-route-id="@p.ProductId">@p.Name</a>
+                        </h5>
+                        <img src="~/img/Product_Uploads/@p.Photo" alt="Product Photo" class="img-thumbnail" />
+                        <h6>
+                            @String.Format("{0:c}", p.Price)
+                        </h6>
+                        <p>
+                            @p.Description
+                        </p>
+
+                        <!--Form-->
+                        <form method="post" action="/Shop/AddToCart">
+                            <!--HiddenField for the selected product id-->
+                            <input type="hidden" id="ProductId" name="ProductId" value="@p.ProductId" />
+                            <div class="form-group">
+                                <label class="control-label" for="Quantity">Quantity: </label>
+                                <input name="Quantity" id="Quantity" required min="1" max="999999" type="number" class="input-small" />
+                            </div>
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

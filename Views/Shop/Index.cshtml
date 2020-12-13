@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Toy_Story_Directory.Models.Category>
+
+@{
+    ViewData["Title"] = "Toys For Every Age";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Choose your age group to start browsing!</h3>
+
+<section>
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <div class="card mb-3 text-center h-100">
+                    <div class="card-body">
+                        <a asp-controller="Shop" asp-action="Browse" asp-route-id="@item.CategoryId">@item.Name</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
